@@ -1,0 +1,136 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Test and coverage reports
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.cache
+nosetests.xml
+coverage/
+.cache/
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+
+# Pycharm
+.idea/
+
+# VSCode
+.vscode/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# Jupyter Notebook
+.ipynb_checkpoints
+.jupyter/
+
+# Sphinx documentation
+docs/_build/
+
+# PyInstaller
+# Usually these files are written by a python script from a template
+# before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Database
+*.sqlite3
+
+# Logs
+*.log
+
+# Docker
+*.log
+docker-compose.override.yml
+Dockerfile
+
+# Ignore local environment files
+.env
+
+# Ignore SQL initialization scripts
+*.sql
+
+# Ignore any files related to build artifacts
+build/
+dist/
+*.log
+
+# Ignore the node_modules directory
+node_modules/
+
+# Ignore compiled files
+*.o
+*.so
+*.dylib
+*.dll
+
+# Ignore virtual environment files
+venv/
+ENV/
+env/
+.venv/
+
+# Ignore macOS generated files
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+._*
+
+# Ignore Windows generated files
+Thumbs.db
+Desktop.ini
