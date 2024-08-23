@@ -1,6 +1,6 @@
 # SKFLAM TechHub Training
 
-Welcome to the **SKFLAM TechHub Training** repository. This repository is designed to help participants learn and practice essential software development tools and practices, including Docker, PostgreSQL, Git, and Python.
+Welcome to the **SKFLAM TechHub Training** repository. This repository is designed to help participants learn and practice essential software development tools and practices, including Docker, PostgreSQL, Git, and Python. stg
 
 ## Table of Contents
 
