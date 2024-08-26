@@ -1,31 +1,21 @@
-# Variables
-APP_NAME=skf-tech-training-app
-IMAGE_NAME=skf-tech-training-app
+# Build and start the Docker Compose services
+up:
+	docker-compose up --build
 
-# Build the Docker image
-build:
-	docker build -t $(IMAGE_NAME) .
+# Stop the Docker Compose services
+down:
+	docker-compose down
 
-# Run the Docker container
-run:
-	docker run -d -p 5000:5000 --name $(APP_NAME) $(IMAGE_NAME)
-
-# Stop the Docker container
-stop:
-	docker stop $(APP_NAME)
-
-# Remove the Docker container
-rm:
-	docker rm $(APP_NAME)
-
-# Rebuild the Docker image without using cache
+# Rebuild the Docker Compose services without cache
 rebuild:
-	docker build --no-cache -t $(IMAGE_NAME) .
+	docker-compose up --build --force-recreate
 
-# View Docker logs
+# View logs from the running services
 logs:
-	docker logs -f $(APP_NAME)
+	docker-compose logs -f
 
-# Clean up Docker images
+# Stop and remove containers, networks, volumes, and images
 clean:
-	docker rmi $(IMAGE_NAME)
+	docker-compose down -v --rmi all
+
+.PHONY: up down rebuild logs clean
