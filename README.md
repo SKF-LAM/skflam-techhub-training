@@ -38,3 +38,8 @@ First, clone this repository to your local machine:
 ```bash
 git clone https://github.com/your_organization/skflam-techhub-training.git
 cd skflam-techhub-training
+```
+
+## skflam-techhub-training - aula 3
+
+Alterando o readme para fazer PR para staging
