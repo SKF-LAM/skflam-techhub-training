@@ -35,6 +35,7 @@ def fetch_titles():
             logger.info("="*40)
         else:
             logger.info("No titles found in the database.")
+            print(No titles found in the database.)
 
     except psycopg2.Error as err:
         logger.error(f"Error: {err}")
