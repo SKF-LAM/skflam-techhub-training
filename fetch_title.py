@@ -24,7 +24,7 @@ def fetch_titles():
         cursor = connection.cursor()
         cursor.execute("SELECT title FROM training_table")
 
-        # Fetch and log all titles
+        # Fetch and log all titles teste
         titles = cursor.fetchall()
         if titles:
             logger.info("\n" + "="*40)
