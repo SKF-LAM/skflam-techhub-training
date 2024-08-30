@@ -29,7 +29,7 @@ jobs:
          access_key_id: ${{ secrets.APP041_ACCESS_KEY_ID }}
          secret_access_key: ${{ secrets.APP041_SECRET_ACCESS_KEY }}
          account_id:  ${{ secrets.APP041_ACCOUNT_ID }}
-         repo: azp-service-billing
+         repo: docker-example
          region: us-east-1
          tags: developer
     - uses: ianbelcher/eks-kubectl-action@master
@@ -45,7 +45,7 @@ jobs:
         aws_secret_access_key: ${{ secrets.APP041_SECRET_ACCESS_KEY }}
         aws_region: us-east-1
         cluster_name: k8-internal-testing
-        args: rollout restart deployment/azp-service-billing -n developer
+        args: rollout restart deployment/docker-example -n developer
     - name: kill vpn
       if: always()
       run: sudo killall openvpn    
